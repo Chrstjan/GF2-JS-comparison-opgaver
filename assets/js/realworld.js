@@ -18,9 +18,11 @@ myAnsverButton.addEventListener('click', (e) => {
 
     // e.preventDefault();
     // if (myAnsverInput.value === 'false') {
-    //   myAnsverFeedbackElement.innerHTML = myAnsverInput.value;
+    //   myAnsverFeedbackElement.innerHTML = 'Ja det er rigtigt';
     // }
-    // else {}
+    // else {
+    //   myAnsverFeedbackElement.innerHTML = 'Nej det er forkert'
+    // }
 
 });
 
@@ -31,11 +33,14 @@ ja i disney film
 myAnsverButton.addEventListener('click', (e) => {
     e.preventDefault();
 
-    if (myAnsverInput.value === 'true') {
-      myAnsverFeedbackElement.innerHTML = myAnsverInput.value;
+    if (myAnsverInput.value === 'false') {
+      myAnsverFeedbackElement.innerHTML = 'Ja det er rigtigt';
     }
     else if (myAnsverInput.value === 'disney') {
-      myAnsverFeedbackElement.innerHTML = myAnsverInput.value;
+      myAnsverFeedbackElement.innerHTML = 'Ja i Dumbo bla.';
+    }
+    else {
+      myAnsverFeedbackElement.innerHTML = 'Nej det er forkert'
     }
 })
 
