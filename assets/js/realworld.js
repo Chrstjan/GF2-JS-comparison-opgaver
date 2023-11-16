@@ -17,6 +17,7 @@ myAnsverButton.addEventListener('click', (e) => {
     /* din kode her.  husk at skrive view funktion der viser om svaret er korrekt i myAnsverFeedbackElement, brug evt. innerHTML*/
 
     // e.preventDefault();
+
     // if (myAnsverInput.value === 'false') {
     //   myAnsverFeedbackElement.innerHTML = 'Ja det er rigtigt';
     // }
@@ -37,7 +38,7 @@ myAnsverButton.addEventListener('click', (e) => {
       myAnsverFeedbackElement.innerHTML = 'Ja det er rigtigt';
     }
     else if (myAnsverInput.value === 'disney') {
-      myAnsverFeedbackElement.innerHTML = 'Ja i Dumbo bla.';
+      myAnsverFeedbackElement.innerHTML = 'Ja i Dumbo bl.a.';
     }
     else {
       myAnsverFeedbackElement.innerHTML = 'Nej det er forkert'
