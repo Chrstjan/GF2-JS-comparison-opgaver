@@ -12,9 +12,15 @@ const myAnsverInput = document.getElementById('answerOne');
 const myAnsverButton = document.getElementById('answerButton');
 const myAnsverFeedbackElement = document.getElementById('answerFeedback');
 
-myAnsverButton.addEventListener('click', () => {
+myAnsverButton.addEventListener('click', (e) => {
 
     /* din kode her.  husk at skrive view funktion der viser om svaret er korrekt i myAnsverFeedbackElement, brug evt. innerHTML*/
+
+    // e.preventDefault();
+    // if (myAnsverInput.value === 'false') {
+    //   myAnsverFeedbackElement.innerHTML = myAnsverInput.value;
+    // }
+    // else {}
 
 });
 
@@ -22,7 +28,16 @@ myAnsverButton.addEventListener('click', () => {
 nej
 ja i disney film
 */
+myAnsverButton.addEventListener('click', (e) => {
+    e.preventDefault();
 
+    if (myAnsverInput.value === 'true') {
+      myAnsverFeedbackElement.innerHTML = myAnsverInput.value;
+    }
+    else if (myAnsverInput.value === 'disney') {
+      myAnsverFeedbackElement.innerHTML = myAnsverInput.value;
+    }
+})
 
 /*opgave 3: skriv en kode der valider formen med følgende elementer: (denne opgave er på extreme niveau) 
 
